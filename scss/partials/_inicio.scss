@@ -1,0 +1,78 @@
+@import "../partials/variables/variables.scss";
+
+
+
+
+
+
+body{
+    background: $fondo-principal;
+    .container{
+        display: grid;
+        grid-template-rows: 150px 1fr 1fr 1fr 1fr  75px; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 15%;
+        grid-template-areas: 
+        "div-menu div-menu div-menu div-menu div-menu div-menu"
+        "oscar bienvenidos bienvenidos bienvenidos bienvenidos auspiciantes"
+        "oscar bienvenidos bienvenidos bienvenidos bienvenidos auspiciantes"
+        "oscar grid-1 grid-1 grid-2 grid-2 auspiciantes"
+        "oscar grid-1 grid-1 grid-2 grid-2 auspiciantes"
+        "redes redes redes redes redes redes";
+
+        
+
+
+        .oscar{
+            grid-area: oscar;
+            
+            
+            
+
+        }
+        .grid-1{
+            grid-area: grid-1;
+            display: grid;
+        }
+        grid-2{
+            grid-area: grid-2;
+        }
+        .auspiciantes{
+            grid-area: auspiciantes;
+        }
+        .redes{
+            grid-area: redes;
+        }
+    
+        .barra{
+            background-color: $fondo-nav;
+            border: rgb(0, 0, 0) solid 2px;
+            grid-area: div-menu;
+            
+            
+            // justify-content: space-evenly;
+            .div-menu{
+                justify-content: space-between;
+                
+            }
+
+            .marca{
+                font-family: $letra-titulos;
+                font-size: xx-large;
+                color: azure;
+                border-style: double;
+                padding: 0px 5px 0px 5px;
+                
+            }
+            
+            .item-menu{
+                color: azure;
+            }
+            .item-menu:hover{
+                color: $fondo-nav;
+                background-color: $fondo-principal;
+            }
+        }
+    }
+
+    
+}

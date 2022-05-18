@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background: #82b74b; }
+  body .container {
+    display: grid;
+    grid-template-rows: 150px 1fr 1fr 1fr 1fr  75px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 15%;
+    grid-template-areas: "div-menu div-menu div-menu div-menu div-menu div-menu" "oscar bienvenidos bienvenidos bienvenidos bienvenidos auspiciantes" "oscar bienvenidos bienvenidos bienvenidos bienvenidos auspiciantes" "oscar grid-1 grid-1 grid-2 grid-2 auspiciantes" "oscar grid-1 grid-1 grid-2 grid-2 auspiciantes" "redes redes redes redes redes redes"; }
+    body .container .oscar {
+      grid-area: oscar; }
+    body .container .grid-1 {
+      grid-area: grid-1;
+      display: grid; }
+    body .container grid-2 {
+      grid-area: grid-2; }
+    body .container .auspiciantes {
+      grid-area: auspiciantes; }
+    body .container .redes {
+      grid-area: redes; }
+    body .container .barra {
+      background-color: #3e4444;
+      border: black solid 2px;
+      grid-area: div-menu; }
+      body .container .barra .div-menu {
+        justify-content: space-between; }
+      body .container .barra .marca {
+        font-family: "Bebas Neue", cursive;
+        font-size: xx-large;
+        color: azure;
+        border-style: double;
+        padding: 0px 5px 0px 5px; }
+      body .container .barra .item-menu {
+        color: azure; }
+      body .container .barra .item-menu:hover {
+        color: #3e4444;
+        background-color: #82b74b; }
+
+* {
+  box-sizing: border-box; }
